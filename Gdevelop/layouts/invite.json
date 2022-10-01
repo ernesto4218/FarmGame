@@ -1,0 +1,1262 @@
+{
+  "b": 209,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Invite",
+  "name": "Invite",
+  "r": 209,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 209,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.3200000000000007,
+    "windowMask": false
+  },
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "InvitedBy",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Code",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "Name",
+          "type": "string",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Background",
+      "persistentUuid": "2b8907e4-fddb-4e83-b7d6-c3b3706019da",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "EnterCode",
+      "persistentUuid": "597143e7-292c-4718-8d8b-65ce8d2d6e9b",
+      "width": 0,
+      "x": -1102,
+      "y": 0,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 54,
+      "layer": "",
+      "name": "TouchInput",
+      "persistentUuid": "bc154633-ea21-4da0-803f-5239ce0481b6",
+      "width": 501,
+      "x": 294,
+      "y": 1526,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 61,
+      "layer": "",
+      "name": "ReferralCodeInput",
+      "persistentUuid": "7929a782-c210-400a-a6ff-b7448bcee1fa",
+      "width": 444,
+      "x": -787,
+      "y": 759,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 94,
+      "layer": "",
+      "name": "save",
+      "persistentUuid": "fa068f81-116c-447e-a5e5-d8b7cc7fdc76",
+      "width": 268.5714416503906,
+      "x": -700.5714111328125,
+      "y": 905,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 39,
+      "layer": "",
+      "name": "State",
+      "persistentUuid": "33e0f725-1704-41c1-86dd-db7c79844a74",
+      "width": 530,
+      "x": -726,
+      "y": 855,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "name": "Background",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "ui.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "save",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "save.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "ReferralCodeInput",
+      "tags": "",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "Touch to start typing",
+        "fontResourceName": "..\\fredoka-one.one-regular.ttf",
+        "fontSize": 35,
+        "inputType": "text",
+        "textColor": "0;0;0",
+        "fillColor": "255;255;255",
+        "fillOpacity": 0,
+        "borderColor": "0;0;0",
+        "borderOpacity": 255,
+        "borderWidth": 0,
+        "readOnly": false,
+        "disabled": false
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "EnterCode",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "enter code.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Touchinput",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "NewSprite-1-0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "TouchInput",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Touch to start typing",
+      "font": "..\\fredoka-one.one-regular.ttf",
+      "characterSize": 35,
+      "color": {
+        "b": 74,
+        "g": 74,
+        "r": 74
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "State",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "..\\fredoka-one.one-regular.ttf",
+      "characterSize": 30,
+      "color": {
+        "b": 74,
+        "g": 74,
+        "r": 74
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "value2",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    }
+  ],
+  "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Enter Code",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "TouchInput",
+                "=",
+                "SceneWindowWidth()/2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "TouchInput",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "EnterCode",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "save",
+                "=",
+                "SceneWindowWidth()/2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "ReferralCodeInput",
+                "=",
+                "SceneWindowWidth()/2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "save",
+                "Tween",
+                "\"pressed\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "save",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleTween"
+              },
+              "parameters": [
+                "save",
+                "Tween",
+                "\"original\"",
+                "save.ScaleX()+0.3",
+                "save.ScaleX()+0.3",
+                "\"bounce\"",
+                "200",
+                "",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "save",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleTween"
+              },
+              "parameters": [
+                "save",
+                "Tween",
+                "\"pressed\"",
+                "save.ScaleX()-0.3",
+                "save.ScaleY()-0.3",
+                "\"bounce\"",
+                "200",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "..\\Sounds\\Click_Sound.mp3",
+                "no",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Firebase::ForceReloadRemoteConfig"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "save",
+                "=",
+                "-1000"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextInput::TextInputObject::SetDisabled"
+              },
+              "parameters": [
+                "ReferralCodeInput",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"errorcheck\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Start query",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Firebase::FirestoreStartQuery"
+                  },
+                  "parameters": [
+                    "\"findreferralcode\"",
+                    "\"Invites\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Firebase::FirestoreQueryWhereText"
+                  },
+                  "parameters": [
+                    "\"findreferralcode\"",
+                    "\"Referralcode\"",
+                    "\"==\"",
+                    "\"4\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Firebase::FirestoreExecuteQuery"
+                  },
+                  "parameters": [
+                    "\"findreferralcode\"",
+                    "FetchedReferralData",
+                    "FetchedReferralDataState"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "State",
+                    "=",
+                    "\"Please Wait...\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenterX"
+                  },
+                  "parameters": [
+                    "State",
+                    "=",
+                    "SceneWindowWidth()/2"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Made a connect to firebase",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "FetchedReferralDataState",
+                "=",
+                "\"ok\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "State",
+                "=",
+                "\"Verifying Referral Code\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "State",
+                "=",
+                "SceneWindowWidth()/2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Referral User Exists",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "FetchedReferralData.docs[0].exists",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "State",
+                "=",
+                "\"Verifying Referral Code.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "State",
+                "=",
+                "SceneWindowWidth()/2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Firebase::DatabaseGetVariable"
+              },
+              "parameters": [
+                "\"Users/\"+Firebase::GetUserUID()+\"/Variables/Coins\"",
+                "Coins",
+                "Getcoinstate"
+              ]
+            },
+            {
+              "type": {
+                "value": "Firebase::ForceReloadRemoteConfig"
+              },
+              "parameters": []
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Give user coins and Update who invited them",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "Getcoinstate",
+                "=",
+                "\"ok\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "FetchedReferralData.docs[0].exists",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "FetchedReferralDataState",
+                "=",
+                "\"ok\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Firebase::FirestoreUpdateField"
+              },
+              "parameters": [
+                "\"Users\"",
+                "Firebase::GetUserUID()",
+                "\"Referral.Name\"",
+                "VariableString(FetchedReferralData.docs[0].data.Name)",
+                "InvitedByNameState"
+              ]
+            },
+            {
+              "type": {
+                "value": "Firebase::FirestoreUpdateField"
+              },
+              "parameters": [
+                "\"Users\"",
+                "Firebase::GetUserUID()",
+                "\"Referral.Code\"",
+                "VariableString(FetchedReferralData.docs[0].data.Referralcode)",
+                "InvitedByCodeState"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "State",
+                "=",
+                "\"Verifying Referral Code..\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "State",
+                "=",
+                "SceneWindowWidth()/2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Update Coins",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "InvitedByNameState",
+                "=",
+                "\"ok\""
+              ]
+            },
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "InvitedByCodeState",
+                "=",
+                "\"ok\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Firebase::DatabaseUpdateField"
+              },
+              "parameters": [
+                "\"Users/\"+Firebase::GetUserUID()+\"/Variables/\"",
+                "\"Coins\"",
+                "ToString(Variable(Coins)+Firebase::GetRemoteConfigNumber(\"ReferralReward\"))",
+                "UpdatecoinState"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "State",
+                "=",
+                "\"Verifying Referral Code...\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "State",
+                "=",
+                "SceneWindowWidth()/2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Update coins",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "UpdatecoinState",
+                "=",
+                "\"ok\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "State",
+                "=",
+                "\"Success\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "State",
+                "=",
+                "SceneWindowWidth()/2"
+              ]
+            },
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"errorcheck\""
+              ]
+            },
+            {
+              "type": {
+                "value": "VariableClearChildren"
+              },
+              "parameters": [
+                "Getcoinstate"
+              ]
+            },
+            {
+              "type": {
+                "value": "VariableClearChildren"
+              },
+              "parameters": [
+                "UpdatecoinState"
+              ]
+            },
+            {
+              "type": {
+                "value": "VariableClearChildren"
+              },
+              "parameters": [
+                "InvitedByNameState"
+              ]
+            },
+            {
+              "type": {
+                "value": "VariableClearChildren"
+              },
+              "parameters": [
+                "InvitedByCodeState"
+              ]
+            },
+            {
+              "type": {
+                "value": "VariableClearChildren"
+              },
+              "parameters": [
+                "FetchedReferralDataState"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Error",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"errorcheck\"",
+                ">=",
+                "10"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "VariableClearChildren"
+              },
+              "parameters": [
+                "UpdatecoinState"
+              ]
+            },
+            {
+              "type": {
+                "value": "VariableClearChildren"
+              },
+              "parameters": [
+                "InvitedByNameState"
+              ]
+            },
+            {
+              "type": {
+                "value": "VariableClearChildren"
+              },
+              "parameters": [
+                "FetchedReferralDataState"
+              ]
+            },
+            {
+              "type": {
+                "value": "VariableClearChildren"
+              },
+              "parameters": [
+                "Getcoinstate"
+              ]
+            },
+            {
+              "type": {
+                "value": "VariableClearChildren"
+              },
+              "parameters": [
+                "InvitedByCodeState"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "State",
+                "=",
+                "\"Something went wrong or slow internet connect. Please try again later.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "State",
+                "=",
+                "SceneWindowWidth()/2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Invite\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 12406784,
+      "ambientLightColorG": 150995054,
+      "ambientLightColorR": 1869182049,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    }
+  ]
+}

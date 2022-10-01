@@ -1,0 +1,19 @@
+{
+  "associatedLayout": "Testing",
+  "lastChangeTimeStamp": 0,
+  "name": "Javascript",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::JsCode",
+      "inlineCode": "firebase.auth().currentUser.getIdTokenResult()\r\n  .then((idTokenResult) => {\r\n     // Confirm the user is an Admin.\r\n     if (!!idTokenResult.claims.admin) {\r\n       // Show admin UI.\r\n       runtimeScene.getVariables().get(\"invite\").setString(\"yes\");\r\n     } else {\r\n       // Show regular user UI.\r\n       runtimeScene.getVariables().get(\"invite\").setString(\"no\");\r\n     }\r\n  })\r\n  .catch((error) => {\r\n    console.log(error);\r\n  });",
+      "parameterObjects": "",
+      "useStrict": true,
+      "eventsSheetExpanded": false
+    }
+  ]
+}

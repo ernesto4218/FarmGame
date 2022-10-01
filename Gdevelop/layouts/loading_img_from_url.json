@@ -1,0 +1,379 @@
+{
+  "b": 85,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Loading_95img_95from_95url",
+  "name": "Loading_img_from_url",
+  "r": 85,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 85,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 0.5799999999999996,
+    "windowMask": false
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "sentence_explain_1",
+      "persistentUuid": "79c0e299-d141-401f-ae77-f811f67e4b4a",
+      "width": 0,
+      "x": 6,
+      "y": 9,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "My_picture",
+      "persistentUuid": "b59efeec-6d0b-432f-912c-c2041f0c0974",
+      "width": 0,
+      "x": 136,
+      "y": 192,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "sentence_explain_2",
+      "persistentUuid": "90d15ec8-c010-47fc-97e9-182dbfe77298",
+      "width": 0,
+      "x": 121,
+      "y": 96,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "sentence_explain_3",
+      "persistentUuid": "9216f578-fe00-411a-add6-cfed59a47c32",
+      "width": 0,
+      "x": 114,
+      "y": 134,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "bybouhandlizard",
+      "persistentUuid": "dc707f68-ae26-480a-93c1-1d9be5ea6b2a",
+      "width": 0,
+      "x": 208,
+      "y": 441,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "NewObject",
+      "persistentUuid": "2156cf8f-57bf-4c15-830d-cede226a5f13",
+      "width": 0,
+      "x": 981,
+      "y": 44,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "CopyOfNewObject",
+      "persistentUuid": "9d230ecf-8272-4ce7-8d3e-9d70d22e6e69",
+      "width": 0,
+      "x": 459,
+      "y": 156,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "name": "My_picture",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Credits.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "sentence_explain_1",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "A default sprite are loaded in \"My_picture\"",
+      "font": "",
+      "characterSize": 45,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "sentence_explain_2",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "When you press M key, the sprite are",
+      "font": "",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "sentence_explain_3",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": " loaded from  a URL and display",
+      "font": "",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "bybouhandlizard",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "by : Bouh and Lizard-13 🇺🇾",
+      "font": "",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    }
+  ],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "This script load a image from a URL",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Press M for start script",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarSceneTxt"
+          },
+          "parameters": [
+            "url",
+            "=",
+            "Firebase::GetPhotoURL()"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarSceneTxt"
+          },
+          "parameters": [
+            "object",
+            "=",
+            "\"My_picture\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "animation",
+            "=",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "m"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "\nvar object = runtimeScene.getVariables().get(\"object\").getAsString(); //get object from scene variable\nvar anim = runtimeScene.getVariables().get(\"animation\").getAsNumber(); //get animation number from scene variable\nvar url = runtimeScene.getVariables().get(\"url\").getAsString(); // get the url from scene variable\n\nruntimeScene.myCallback = function(loader, resources){ // loader and ressources come from PIXI.Loader.shared\n\n    var mySprite= resources[\"Sprite_Logo_GDevelop\"]; //get the image from PIXI ressources\n    \n    var game = runtimeScene.getGame(); //get the game currently running\n    \n    var object_texture_image = runtimeScene.getObjects(object); // Get all the objects called \"My_picture\"\n\n    var object_texture_image_renderer = object_texture_image[anim].getRendererObject(); // get the frist (and unique) objet called \"My_picture\" and get this renderer (PIXI sprite)\n\n    object_texture_image_renderer.texture = mySprite.texture; // change the texture in renderer (PIXI sprite)\n  \n\n};\n\nPIXI.Loader.shared.reset(); // reset the loader because if you press many times M key the ressources \"Sprite_Logo_GDevelop\" exist and crash your application\nPIXI.Loader.shared.add(\"Sprite_Logo_GDevelop\", url);  // here change the URL for get you own images from web !\nPIXI.Loader.shared.load(runtimeScene.myCallback); // Use callback for load the new image",
+          "parameterObjects": "",
+          "useStrict": false,
+          "eventsSheetExpanded": false
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": []
+}

@@ -1,0 +1,1116 @@
+{
+  "b": 209,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Login",
+  "name": "Login",
+  "r": 209,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 209,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.2799999999999998,
+    "windowMask": false
+  },
+  "objectsGroups": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "FirebaseCallbackLogin",
+      "type": "string",
+      "value": ""
+    }
+  ],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Background",
+      "persistentUuid": "e0207990-0cd2-4a31-8509-237dd160e452",
+      "width": 0,
+      "x": 1,
+      "y": 1,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 971,
+      "layer": "",
+      "name": "Frame",
+      "persistentUuid": "c39a7078-6638-4a6a-8827-a14655a64eb7",
+      "width": 960,
+      "x": 64,
+      "y": 428,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 128,
+      "layer": "",
+      "name": "GoogleSignin",
+      "persistentUuid": "cef772f9-d38a-4afb-887b-b70e7d94ea6c",
+      "width": 704,
+      "x": 192,
+      "y": 672,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 128,
+      "layer": "",
+      "name": "FacebookSignIn",
+      "persistentUuid": "32aaa97f-1c9b-49f9-972a-3aeab9dd14bd",
+      "width": 704,
+      "x": 192,
+      "y": 832,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 128,
+      "layer": "",
+      "name": "SupportBTN",
+      "persistentUuid": "41e9b7a8-82b8-4a63-8781-8b979f53ba4c",
+      "width": 384,
+      "x": 352,
+      "y": 1120,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 155,
+      "layer": "",
+      "name": "Callback",
+      "persistentUuid": "cdaf00a5-41b9-40ac-b00c-e7b76ad0945a",
+      "width": 745,
+      "x": 198,
+      "y": 1000,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "CloseBTN",
+      "persistentUuid": "779598d8-a841-4949-8860-63d95d9ff788",
+      "width": 0,
+      "x": 938,
+      "y": 507,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "name": "EmailInput",
+      "tags": "",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "Touch to start typing",
+        "fontResourceName": "",
+        "fontSize": 40,
+        "inputType": "email",
+        "textColor": "0;0;0",
+        "fillColor": "255;255;255",
+        "fillOpacity": 255,
+        "borderColor": "0;0;0",
+        "borderOpacity": 255,
+        "borderWidth": 1,
+        "readOnly": false,
+        "disabled": false
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "PasswordInput",
+      "tags": "",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "Touch to start typing",
+        "fontResourceName": "",
+        "fontSize": 40,
+        "inputType": "email",
+        "textColor": "0;0;0",
+        "fillColor": "255;255;255",
+        "fillOpacity": 255,
+        "borderColor": "0;0;0",
+        "borderOpacity": 255,
+        "borderWidth": 1,
+        "readOnly": false,
+        "disabled": false
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Callback",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "..\\fredoka-one.one-regular.ttf",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Background",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\Login\\BG.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Frame",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\Login\\sign in frame.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "CloseBTN",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\Login\\close.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "GoogleSignin",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\Login\\Signin google.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "FacebookSignIn",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\Login\\sign in facebook.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "SupportBTN",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\Login\\support.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Entrance Animation",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Frame",
+                "=",
+                "1920"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "CloseBTN",
+                "=",
+                "1920"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "GoogleSignin",
+                "=",
+                "1920"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "FacebookSignIn",
+                "=",
+                "1920"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "SupportBTN",
+                "=",
+                "1920"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Callback",
+                "=",
+                "\"0\""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Callback",
+                "=",
+                "1920"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "Frame",
+                    "Tween",
+                    "\"up\"",
+                    "428",
+                    "\"easeInOutCubic\"",
+                    "1000",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "CloseBTN",
+                    "Tween",
+                    "\"up\"",
+                    "504",
+                    "\"easeInOutCubic\"",
+                    "1000",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "GoogleSignin",
+                    "Tween",
+                    "\"up\"",
+                    "672",
+                    "\"easeInOutCubic\"",
+                    "1000",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "FacebookSignIn",
+                    "Tween",
+                    "\"up\"",
+                    "832",
+                    "\"easeInOutCubic\"",
+                    "1000",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "SupportBTN",
+                    "Tween",
+                    "\"up\"",
+                    "1120",
+                    "\"easeInOutCubic\"",
+                    "1000",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Sign in",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "GoogleSignin",
+                "ScaleX",
+                "=",
+                "GoogleSignin.ScaleX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "GoogleSignin",
+                "ScaleY",
+                "=",
+                "GoogleSignin.ScaleY()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "GoogleSignin",
+                "Left",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleTween"
+              },
+              "parameters": [
+                "GoogleSignin",
+                "Tween",
+                "\"pressed\"",
+                "GoogleSignin.ScaleX()-0.3",
+                "GoogleSignin.ScaleY()-0.3",
+                "\"bounce\"",
+                "200",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "..\\Sounds\\Click_Sound.mp3",
+                "no",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "GoogleSignin",
+                "Tween",
+                "\"pressed\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleTween"
+              },
+              "parameters": [
+                "GoogleSignin",
+                "Tween",
+                "\"original\"",
+                "GoogleSignin.Variable(ScaleX)",
+                "GoogleSignin.Variable(ScaleY)",
+                "\"bounce\"",
+                "200",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Firebase::ProviderAccountSignIn"
+              },
+              "parameters": [
+                "\"google\"",
+                "GoogleLoginCallback"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Callback",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "GoogleLoginCallback",
+                "!=",
+                "\"0\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Callback",
+                "=",
+                "VariableString(GoogleLoginCallback)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::SetTextAlignment"
+              },
+              "parameters": [
+                "Callback",
+                "\"center\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "Callback",
+                "=",
+                "SceneWindowWidth()/2"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Callback",
+                "=",
+                "1000"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "GoogleLoginCallback",
+                "=",
+                "\"ok\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Callback",
+                "=",
+                "\"Sign in successul.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::SetTextAlignment"
+              },
+              "parameters": [
+                "Callback",
+                "\"center\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "Callback",
+                "=",
+                "SceneWindowWidth()/2"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Callback",
+                "=",
+                "1000"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Home\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Check user login token",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Firebase::IsSignedIn"
+          },
+          "parameters": []
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Home\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyReleased"
+          },
+          "parameters": [
+            "",
+            "Return"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Firebase::BasicAccountSignIn"
+          },
+          "parameters": [
+            "\"Testing@gmail.com\"",
+            "\"testpassword\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyReleased"
+          },
+          "parameters": [
+            "",
+            "t"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Testing\"",
+            ""
+          ]
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 13558608,
+      "ambientLightColorG": 150995054,
+      "ambientLightColorR": 1869182049,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    }
+  ]
+}

@@ -1,0 +1,4564 @@
+{
+  "b": 209,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Market",
+  "name": "Market",
+  "r": 209,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 209,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.5400000000000001,
+    "windowMask": false
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Background",
+      "persistentUuid": "dc5c1663-007e-4a04-a377-e0bd29d44306",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 326,
+      "layer": "",
+      "name": "MarketCrop",
+      "persistentUuid": "448c4587-789f-4230-8894-7fa843a34430",
+      "width": 195.60000610351562,
+      "x": 156.39999389648438,
+      "y": 1112,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 56,
+      "layer": "",
+      "name": "CropsNameTxT",
+      "persistentUuid": "fc986b3f-e0f7-4593-8bc0-92155e7c98ab",
+      "width": 339,
+      "x": 373,
+      "y": 1150,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 72,
+      "layer": "",
+      "name": "EnterAmountFrame",
+      "persistentUuid": "3ddfad4a-1e74-4faa-a074-f3ad1f2ea4c5",
+      "width": 331,
+      "x": 373,
+      "y": 1202,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "CropsValueTxT",
+      "persistentUuid": "8036a5a8-c2cd-4639-8721-55be253108f8",
+      "width": 0,
+      "x": 373,
+      "y": 1277,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 128,
+      "layer": "",
+      "name": "SellBTN",
+      "persistentUuid": "c0c9f32c-71d6-4b96-bc6e-0c29e2bdae25",
+      "width": 345.5999755859375,
+      "x": 594.5499877929688,
+      "y": 1280,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 132,
+      "layer": "",
+      "name": "NavBtn",
+      "persistentUuid": "eadc24c7-4345-4fe7-a819-b759961f2b18",
+      "width": 132,
+      "x": 666.0800170898438,
+      "y": 1487,
+      "zOrder": 8,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "ID",
+          "type": "string",
+          "value": "Next"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 132,
+      "layer": "",
+      "name": "NavBtn",
+      "persistentUuid": "bfac36be-cef3-406c-9d67-d5474aea99df",
+      "width": 132,
+      "x": 285.9200134277344,
+      "y": 1487,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "ID",
+          "type": "string",
+          "value": "Back"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "AmountSell",
+      "persistentUuid": "b9f07ce3-f3a4-4a7e-863d-20cf8adcd2f2",
+      "width": 0,
+      "x": 396,
+      "y": 1223,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 37,
+      "layer": "",
+      "name": "SellState",
+      "persistentUuid": "fabfa329-40ff-4ada-ab5d-155e1b1bdb1f",
+      "width": 343,
+      "x": 625,
+      "y": 1413,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "CoinBar",
+      "persistentUuid": "bb8b6dde-0ccb-42a0-881b-dcac30a1f157",
+      "width": 0,
+      "x": 722,
+      "y": 260,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 37,
+      "layer": "",
+      "name": "CoinTxT",
+      "persistentUuid": "a7df8497-5c95-4e4c-abbb-38a94d345509",
+      "width": 141,
+      "x": 746,
+      "y": 291,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 102,
+      "layer": "",
+      "name": "CloseBTN",
+      "persistentUuid": "47f9f259-7393-425e-a05e-7bef24082864",
+      "width": 97.19999694824219,
+      "x": 941,
+      "y": 55,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 33,
+      "layer": "",
+      "name": "CarrotsAmount",
+      "persistentUuid": "4c5a7387-f226-4c17-b27e-e230b48ec9b9",
+      "width": 163,
+      "x": 228,
+      "y": 408,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "ID",
+          "type": "string",
+          "value": "Carrot"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 28,
+      "layer": "",
+      "name": "PotatoAmount",
+      "persistentUuid": "637158dd-eb33-4db1-9533-0d79947ae878",
+      "width": 121,
+      "x": 228,
+      "y": 496,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 28,
+      "layer": "",
+      "name": "TomatoAmount",
+      "persistentUuid": "44aa8dc2-027a-4a3d-814b-fa4c457eb985",
+      "width": 167,
+      "x": 486,
+      "y": 408,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 28,
+      "layer": "",
+      "name": "StrawberryAmount",
+      "persistentUuid": "4520d289-0df2-403f-a49e-c4ce441f96f4",
+      "width": 146,
+      "x": 486,
+      "y": 494,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 28,
+      "layer": "",
+      "name": "CornAmount",
+      "persistentUuid": "36cc40ec-56ab-4fb4-9f9d-9d8a9204f8f8",
+      "width": 114,
+      "x": 783,
+      "y": 408,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 28,
+      "layer": "",
+      "name": "CabbageAmoutn",
+      "persistentUuid": "2fba25db-74f6-488c-b8ff-999b698dc231",
+      "width": 138,
+      "x": 783,
+      "y": 494,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 28,
+      "layer": "",
+      "name": "TomatoAmount",
+      "persistentUuid": "ce9d90cf-dff1-4950-bee6-f6198ae28706",
+      "width": 167,
+      "x": 486,
+      "y": 408,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 23,
+      "layer": "",
+      "name": "callback",
+      "persistentUuid": "4b25d483-c4c7-464b-8a01-489a7d6a6032",
+      "width": 233,
+      "x": 700,
+      "y": 1156,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "name": "Background",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\StoreUI\\MarketUI.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "CarrotsAmount",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "999",
+      "font": "..\\DynaPuff\\DynaPuff-VariableFont_wdth,wght.ttf",
+      "characterSize": 23,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "PotatoAmount",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "999",
+      "font": "..\\DynaPuff\\DynaPuff-VariableFont_wdth,wght.ttf",
+      "characterSize": 23,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "TomatoAmount",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "999",
+      "font": "..\\DynaPuff\\DynaPuff-VariableFont_wdth,wght.ttf",
+      "characterSize": 23,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "StrawberryAmount",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "999",
+      "font": "..\\DynaPuff\\DynaPuff-VariableFont_wdth,wght.ttf",
+      "characterSize": 23,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "CornAmount",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "999",
+      "font": "..\\DynaPuff\\DynaPuff-VariableFont_wdth,wght.ttf",
+      "characterSize": 23,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "CabbageAmoutn",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "999",
+      "font": "..\\DynaPuff\\DynaPuff-VariableFont_wdth,wght.ttf",
+      "characterSize": 23,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "CropsNameTxT",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Name",
+      "font": "..\\fredoka-one.one-regular.ttf",
+      "characterSize": 40,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "CropsValueTxT",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Value : 0",
+      "font": "..\\fredoka-one.one-regular.ttf",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "CoinTxT",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "999999",
+      "font": "..\\fredoka-one.one-regular.ttf",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "SellState",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "..\\fredoka-one.one-regular.ttf",
+      "characterSize": 25,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "MarketCrop",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Carrot",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\StoreUI\\market crop\\1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Potato",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\StoreUI\\market crop\\2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tomato",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\StoreUI\\market crop\\3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Corn",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\StoreUI\\market crop\\4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cabbage",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\StoreUI\\market crop\\5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Strawberry",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\StoreUI\\market crop\\6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "EnterAmountFrame",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\StoreUI\\amount bar.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "SellBTN",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\StoreUI\\sellbtn.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\StoreUI\\sellbtn pressed.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "NavBtn",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\StoreUI\\back.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\StoreUI\\next.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BackClick",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\StoreUI\\back clicked.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NextClick",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\StoreUI\\next clicked.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "AmountSell",
+      "tags": "",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "Enter Amount",
+        "fontResourceName": "..\\fredoka-one.one-regular.ttf",
+        "fontSize": 35,
+        "inputType": "number",
+        "textColor": "0;0;0",
+        "fillColor": "0;0;0",
+        "fillOpacity": 0,
+        "borderColor": "0;0;0",
+        "borderOpacity": 255,
+        "borderWidth": 0,
+        "readOnly": false,
+        "disabled": false
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "CoinBar",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\coin bar.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "callback",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "CloseBTN",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "..\\Images\\Login\\close.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Music",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Fetching Data",
+      "comment2": ""
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Firebase::DatabaseGetVariable"
+          },
+          "parameters": [
+            "\"Users/\"+Firebase::GetUserUID()",
+            "FetchedData",
+            "FetchedDataState"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextInput::TextInputObject::SetText"
+          },
+          "parameters": [
+            "AmountSell",
+            "=",
+            "\"0\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "..\\Sounds\\Click_Sound.mp3"
+          ]
+        },
+        {
+          "type": {
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "Cash_Register_Kaching_-_Sound_Eff_.mp3"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Fetching Data State",
+      "comment2": ""
+    },
+    {
+      "folded": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VarSceneTxt"
+          },
+          "parameters": [
+            "FetchedDataState",
+            "=",
+            "\"ok\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModVarSceneTxt"
+          },
+          "parameters": [
+            "FetchedDataState",
+            "=",
+            "\"\""
+          ]
+        },
+        {
+          "type": {
+            "value": "TextInput::TextInputObject::SetText"
+          },
+          "parameters": [
+            "AmountSell",
+            "=",
+            "\"0\""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Modify Storage Text",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "CarrotsAmount",
+                "=",
+                "ToString(Variable(FetchedData.Crops.Carrot))"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "PotatoAmount",
+                "=",
+                "ToString(Variable(FetchedData.Crops.Potato))"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "TomatoAmount",
+                "=",
+                "ToString(Variable(FetchedData.Crops.Tomato))"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "CornAmount",
+                "=",
+                "ToString(Variable(FetchedData.Crops.Corn))"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "CabbageAmoutn",
+                "=",
+                "ToString(Variable(FetchedData.Crops.Cabbage))"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "StrawberryAmount",
+                "=",
+                "ToString(Variable(FetchedData.Crops.Strawberry))"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Modify coins",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "FetchedData.Variables.Coins",
+                ">=",
+                "1000"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "CoinTxT",
+                "=",
+                "ToString(Variable(FetchedData.Variables.Coins)/1000) + \"K\" "
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "FetchedData.Variables.Coins",
+                "<=",
+                "999"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "CoinTxT",
+                "=",
+                "ToString(Variable(FetchedData.Variables.Coins))"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Sell Crops",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarObjetTxt"
+              },
+              "parameters": [
+                "NavBtn",
+                "ID",
+                "=",
+                "\"Back\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "NavBtn",
+                "=",
+                "SceneWindowWidth()/2-150"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarObjetTxt"
+              },
+              "parameters": [
+                "NavBtn",
+                "ID",
+                "=",
+                "\"Next\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "NavBtn",
+                "=",
+                "SceneWindowWidth()/2+150"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Nav Button",
+          "comment2": ""
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "NavBtn",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Selling",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "NavBtn",
+                    "ID",
+                    "=",
+                    "\"Next\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "..\\Sounds\\Click_Sound.mp3",
+                    "no",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "MarketCrop",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "NavBtn",
+                    "\"NextClick\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "NavBtn",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "NavBtn",
+                    "ID",
+                    "=",
+                    "\"Back\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "..\\Sounds\\Click_Sound.mp3",
+                    "no",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "MarketCrop",
+                    "-",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "NavBtn",
+                    "\"BackClick\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "NavBtn",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Select Crop to sell",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Animation"
+              },
+              "parameters": [
+                "MarketCrop",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "CropsNameTxT",
+                "=",
+                "\"Carrot\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Animation"
+              },
+              "parameters": [
+                "MarketCrop",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "CropsNameTxT",
+                "=",
+                "\"Potato\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Animation"
+              },
+              "parameters": [
+                "MarketCrop",
+                "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "CropsNameTxT",
+                "=",
+                "\"Tomato\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Animation"
+              },
+              "parameters": [
+                "MarketCrop",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "CropsNameTxT",
+                "=",
+                "\"Corn\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Animation"
+              },
+              "parameters": [
+                "MarketCrop",
+                "=",
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "CropsNameTxT",
+                "=",
+                "\"Cabbage\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Animation"
+              },
+              "parameters": [
+                "MarketCrop",
+                "=",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "CropsNameTxT",
+                "=",
+                "\"Strawberry\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Fix Screen Size when using keyboard",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TextInput::TextInputObject::Focused"
+              },
+              "parameters": [
+                "AmountSell"
+              ]
+            },
+            {
+              "type": {
+                "value": "SystemInfo::HasTouchScreen"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetGameResolutionResizeMode"
+              },
+              "parameters": [
+                "",
+                "\"adaptHeight\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "SellModeKeyboard",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "TextInput::TextInputObject::Focused"
+              },
+              "parameters": [
+                "AmountSell"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "SellModeKeyboard",
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "SellModeKeyboard",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SystemInfo::HasTouchScreen"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetGameResolutionSize"
+              },
+              "parameters": [
+                "",
+                "1080",
+                "1920"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGameResolutionResizeMode"
+              },
+              "parameters": [
+                "",
+                "\"\""
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Value",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Carrots",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "MarketCrop",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "CropsValueTxT",
+                        "=",
+                        "\"Value : \" + ToString(ToNumber(AmountSell.Text())*1)"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Potato",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "MarketCrop",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "CropsValueTxT",
+                    "=",
+                    "\"Value : \" + ToString(ToNumber(AmountSell.Text())*10)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Tomato",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "MarketCrop",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "CropsValueTxT",
+                    "=",
+                    "\"Value : \" + ToString(ToNumber(AmountSell.Text())*13)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Corn",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "MarketCrop",
+                    "=",
+                    "3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "CropsValueTxT",
+                    "=",
+                    "\"Value : \" + ToString(ToNumber(AmountSell.Text())*20)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Cabbage",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "MarketCrop",
+                    "=",
+                    "4"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "CropsValueTxT",
+                    "=",
+                    "\"Value : \" + ToString(ToNumber(AmountSell.Text())*30)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Strawberry",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "MarketCrop",
+                    "=",
+                    "5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "CropsValueTxT",
+                    "=",
+                    "\"Value : \" + ToString(ToNumber(AmountSell.Text())*40)"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Sell button",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "SellBTN",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Selling",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Firebase::DatabaseGetVariable"
+                  },
+                  "parameters": [
+                    "\"Users/\"+Firebase::GetUserUID()",
+                    "FetchedData",
+                    "FetchedDataTransactionState"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Firebase::DatabaseGetVariable"
+                  },
+                  "parameters": [
+                    "\"CropsValue\"",
+                    "FetchedCropValue",
+                    "FetchedCropValueState"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "..\\Sounds\\Click_Sound.mp3",
+                    "no",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "SellAmount",
+                    "=",
+                    "ToNumber(AmountSell.Text())"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Selling",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextInput::TextInputObject::SetDisabled"
+                  },
+                  "parameters": [
+                    "AmountSell",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "SellState",
+                    "=",
+                    "\"Please wait\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "SellBTN",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "SellBTN",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "SellAmount",
+                    "<",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "SellState",
+                    "=",
+                    "\"Enter valid amount\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Selling",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextInput::TextInputObject::SetDisabled"
+                  },
+                  "parameters": [
+                    "AmountSell",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Identify What crop was sold",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Carrot",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "MarketCrop",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "FetchedDataTransactionState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "FetchedCropValueState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Allow to sell",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Carrot",
+                        ">=",
+                        "Variable(SellAmount)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Carrot",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "SellCrops",
+                        "=",
+                        "\"Carrot\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Verifying transaction\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Not enough",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Carrot",
+                        "<",
+                        "Variable(SellAmount)"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Selling",
+                        "False"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "FetchedDataTransactionState",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "FetchedCropValueState",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Not enough carrots\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetDisabled"
+                      },
+                      "parameters": [
+                        "AmountSell",
+                        "no"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetText"
+                      },
+                      "parameters": [
+                        "AmountSell",
+                        "=",
+                        "\"0\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Potato",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "MarketCrop",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "FetchedDataTransactionState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "FetchedCropValueState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Allow to sell",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Potato",
+                        ">=",
+                        "Variable(SellAmount)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Potato",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "SellCrops",
+                        "=",
+                        "\"Potato\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Verifying transaction\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Not enough",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Potato",
+                        "<",
+                        "Variable(SellAmount)"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Selling",
+                        "False"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "FetchedDataTransactionState",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "FetchedCropValueState",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetText"
+                      },
+                      "parameters": [
+                        "AmountSell",
+                        "=",
+                        "\"0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Not enough potatoes\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetDisabled"
+                      },
+                      "parameters": [
+                        "AmountSell",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Tomato",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "MarketCrop",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "FetchedDataTransactionState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "FetchedCropValueState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Allow to sell",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Tomato",
+                        ">=",
+                        "Variable(SellAmount)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Tomato",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "SellCrops",
+                        "=",
+                        "\"Tomato\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Verifying transaction\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Not enough",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Tomato",
+                        "<",
+                        "Variable(SellAmount)"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Selling",
+                        "False"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "FetchedDataTransactionState",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "FetchedCropValueState",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetText"
+                      },
+                      "parameters": [
+                        "AmountSell",
+                        "=",
+                        "\"0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Not enough tomatoes\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetDisabled"
+                      },
+                      "parameters": [
+                        "AmountSell",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Corn",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "MarketCrop",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "FetchedDataTransactionState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "FetchedCropValueState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Allow to sell",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Corn",
+                        ">=",
+                        "Variable(SellAmount)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Corn",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "SellCrops",
+                        "=",
+                        "\"Corn\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Verifying transaction\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Not enough",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Corn",
+                        "<",
+                        "Variable(SellAmount)"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Selling",
+                        "False"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "FetchedDataTransactionState",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "FetchedCropValueState",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetText"
+                      },
+                      "parameters": [
+                        "AmountSell",
+                        "=",
+                        "\"0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Not enough corns\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetDisabled"
+                      },
+                      "parameters": [
+                        "AmountSell",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Cabbage",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "MarketCrop",
+                    "=",
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "FetchedDataTransactionState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "FetchedCropValueState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Allow to sell",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Cabbage",
+                        ">=",
+                        "Variable(SellAmount)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Cabbage",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "SellCrops",
+                        "=",
+                        "\"Cabbage\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Verifying transaction\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Not enough",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Cabbage",
+                        "<",
+                        "Variable(SellAmount)"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Selling",
+                        "False"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "FetchedDataTransactionState",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "FetchedCropValueState",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetText"
+                      },
+                      "parameters": [
+                        "AmountSell",
+                        "=",
+                        "\"0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Not enough cabbages\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetDisabled"
+                      },
+                      "parameters": [
+                        "AmountSell",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Strawberry",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "MarketCrop",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "FetchedDataTransactionState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "FetchedCropValueState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Allow to sell",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Strawberry",
+                        ">=",
+                        "Variable(SellAmount)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Strawberry",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "SellCrops",
+                        "=",
+                        "\"Strawberry\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Verifying transaction\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Not enough",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "FetchedData.Crops.Strawberry",
+                        "<",
+                        "Variable(SellAmount)"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Selling",
+                        "False"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "FetchedDataTransactionState",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "FetchedCropValueState",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetText"
+                      },
+                      "parameters": [
+                        "AmountSell",
+                        "=",
+                        "\"0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Not enough strawberries\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetDisabled"
+                      },
+                      "parameters": [
+                        "AmountSell",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "After Fetching Data",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "FetchedDataTransactionState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "FetchedCropValueState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "CropsValue",
+                    "=",
+                    "ToString(Variable(FetchedCropValue))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "FetchedDataTransactionState",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "FetchedCropValueState",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Proceed Transaction / Identify the crops",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "SellCrops",
+                        "=",
+                        "\"Carrot\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "CarrotSold",
+                        "=",
+                        "ToNumber(AmountSell.Text()) * Variable(FetchedCropValue.Carrot)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Firebase::DatabaseUpdateField"
+                      },
+                      "parameters": [
+                        "\"Users/\"+Firebase::GetUserUID()",
+                        "\"Crops/Carrot\"",
+                        "ToString(Variable(FetchedData.Crops.Carrot)-ToNumber(AmountSell.Text()))",
+                        "UpdateCropTransactionState"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Firebase::DatabaseUpdateField"
+                      },
+                      "parameters": [
+                        "\"Users/\"+Firebase::GetUserUID()",
+                        "\"Variables/Coins\"",
+                        "ToString(Variable(FetchedData.Variables.Coins)+Variable(CarrotSold))",
+                        "UpdateCoinState"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Transaction verified\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "SellCrops",
+                        "=",
+                        "\"Potato\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "PotatoSold",
+                        "=",
+                        "ToNumber(AmountSell.Text()) * Variable(FetchedCropValue.Potato)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Firebase::DatabaseUpdateField"
+                      },
+                      "parameters": [
+                        "\"Users/\"+Firebase::GetUserUID()",
+                        "\"Crops/Potato\"",
+                        "ToString(Variable(FetchedData.Crops.Potato)-ToNumber(AmountSell.Text()))",
+                        "UpdateCropTransactionState"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Firebase::DatabaseUpdateField"
+                      },
+                      "parameters": [
+                        "\"Users/\"+Firebase::GetUserUID()",
+                        "\"Variables/Coins\"",
+                        "ToString(Variable(FetchedData.Variables.Coins)+Variable(PotatoSold))",
+                        "UpdateCoinState"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Transaction verified\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "SellCrops",
+                        "=",
+                        "\"Tomato\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "TomatoSold",
+                        "=",
+                        "ToNumber(AmountSell.Text()) * Variable(FetchedCropValue.Tomato)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Firebase::DatabaseUpdateField"
+                      },
+                      "parameters": [
+                        "\"Users/\"+Firebase::GetUserUID()",
+                        "\"Crops/Tomato\"",
+                        "ToString(Variable(FetchedData.Crops.Tomato)-ToNumber(AmountSell.Text()))",
+                        "UpdateCropTransactionState"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Firebase::DatabaseUpdateField"
+                      },
+                      "parameters": [
+                        "\"Users/\"+Firebase::GetUserUID()",
+                        "\"Variables/Coins\"",
+                        "ToString(Variable(FetchedData.Variables.Coins)+Variable(TomatoSold))",
+                        "UpdateCoinState"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Transaction verified\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "SellCrops",
+                        "=",
+                        "\"Corn\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "CornSold",
+                        "=",
+                        "ToNumber(AmountSell.Text()) * Variable(FetchedCropValue.Corn)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Firebase::DatabaseUpdateField"
+                      },
+                      "parameters": [
+                        "\"Users/\"+Firebase::GetUserUID()",
+                        "\"Crops/Corn\"",
+                        "ToString(Variable(FetchedData.Crops.Corn)-ToNumber(AmountSell.Text()))",
+                        "UpdateCropTransactionState"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Firebase::DatabaseUpdateField"
+                      },
+                      "parameters": [
+                        "\"Users/\"+Firebase::GetUserUID()",
+                        "\"Variables/Coins\"",
+                        "ToString(Variable(FetchedData.Variables.Coins)+Variable(CornSold))",
+                        "UpdateCoinState"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Transaction verified\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "SellCrops",
+                        "=",
+                        "\"Cabbage\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "CabbageSold",
+                        "=",
+                        "ToNumber(AmountSell.Text()) * Variable(FetchedCropValue.Cabbage)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Firebase::DatabaseUpdateField"
+                      },
+                      "parameters": [
+                        "\"Users/\"+Firebase::GetUserUID()",
+                        "\"Crops/Cabbage\"",
+                        "ToString(Variable(FetchedData.Crops.Cabbage)-ToNumber(AmountSell.Text()))",
+                        "UpdateCropTransactionState"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Firebase::DatabaseUpdateField"
+                      },
+                      "parameters": [
+                        "\"Users/\"+Firebase::GetUserUID()",
+                        "\"Variables/Coins\"",
+                        "ToString(Variable(FetchedData.Variables.Coins)+Variable(CabbageSold))",
+                        "UpdateCoinState"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Transaction verified\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "SellCrops",
+                        "=",
+                        "\"Strawberry\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "StrawberrySold",
+                        "=",
+                        "ToNumber(AmountSell.Text()) * Variable(FetchedCropValue.Strawberry)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Firebase::DatabaseUpdateField"
+                      },
+                      "parameters": [
+                        "\"Users/\"+Firebase::GetUserUID()",
+                        "\"Crops/Strawberry\"",
+                        "ToString(Variable(FetchedData.Crops.Strawberry)-ToNumber(AmountSell.Text()))",
+                        "UpdateCropTransactionState"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Firebase::DatabaseUpdateField"
+                      },
+                      "parameters": [
+                        "\"Users/\"+Firebase::GetUserUID()",
+                        "\"Variables/Coins\"",
+                        "ToString(Variable(FetchedData.Variables.Coins)+Variable(StrawberrySold))",
+                        "UpdateCoinState"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SellState",
+                        "=",
+                        "\"Transaction verified\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Transaction Done / Reset the Storage / Reset the amount",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "UpdateCropTransactionState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "UpdateCoinState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Firebase::DatabaseGetVariable"
+                  },
+                  "parameters": [
+                    "\"Users/\"+Firebase::GetUserUID()",
+                    "FetchedData",
+                    "FetchedDataState"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "Cash_Register_Kaching_-_Sound_Eff_.mp3",
+                    "",
+                    "50",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextInput::TextInputObject::SetText"
+                  },
+                  "parameters": [
+                    "AmountSell",
+                    "=",
+                    "\"0\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "SellState",
+                    "=",
+                    "\"Transaction Complete\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextInput::TextInputObject::SetDisabled"
+                  },
+                  "parameters": [
+                    "AmountSell",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Selling",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "UpdateCropTransactionState",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "UpdateCoinState",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "SellCrops",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "CarrotSold",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "PotatoSold",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "CornSold",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "CabbageSold",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "StrawberrySold",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Close",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "CloseBTN",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Selling",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Home\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "callback",
+            "=",
+            "VariableString(FetchedCropValueState)"
+          ]
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 10888048,
+      "ambientLightColorG": 150995054,
+      "ambientLightColorR": 1869182049,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": []
+}

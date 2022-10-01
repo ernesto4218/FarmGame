@@ -1,0 +1,360 @@
+{
+  "associatedLayout": "Home",
+  "lastChangeTimeStamp": 0,
+  "name": "Load Data",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "User : Testing@gmail.com\nPass : testpassword",
+      "comment2": ""
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Check for Existing User",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Check if user has data",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Firebase::IsSignedIn"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Login\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Firebase::IsSignedIn"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "UserDocExistsState",
+                "!=",
+                "\"ok\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Firebase::FirestoreHasDocument"
+              },
+              "parameters": [
+                "\"Users\"",
+                "Firebase::GetUserUID()",
+                "UserDocExists",
+                "UserDocExistsState"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "User Document Exists",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "UserDocExists",
+                "=",
+                "\"true\""
+              ]
+            },
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "UserDocExistsState",
+                "=",
+                "\"ok\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Firebase::DatabaseGetField"
+              },
+              "parameters": [
+                "\"Users/\"+Firebase::GetUserUID()",
+                "\"Crops\"",
+                "Crops",
+                "LoadCarrotState"
+              ]
+            },
+            {
+              "type": {
+                "value": "Firebase::DatabaseGetVariable"
+              },
+              "parameters": [
+                "\"Users/\"+Firebase::GetUserUID()",
+                "FetchedData",
+                "FetchedDataState"
+              ]
+            },
+            {
+              "type": {
+                "value": "Firebase::FirestoreGetDocument"
+              },
+              "parameters": [
+                "\"Users\"",
+                "Firebase::GetUserUID()",
+                "FetchDocument",
+                "FetchDocumentState"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Load Data",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "User Document Do Not Exists, First Time Creating User Data",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Preload Data",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "UserDocExists",
+                    "=",
+                    "\"false\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "UserDocExistsState",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "Payload.UserInfo.DocID",
+                    "=",
+                    "Firebase::GetUserUID()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "Payload.UserInfo.Email",
+                    "=",
+                    "Firebase::GetUserEmail()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "Payload.UserInfo.Name",
+                    "=",
+                    "Firebase::GetUserDisplayName()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "Payload.UserInfo.SendState",
+                    "=",
+                    "\"ready\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Send Data To Firestore / Real Time Database (RTD)",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "Payload.UserInfo.SendState",
+                    "=",
+                    "\"ready\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Firebase::FirestoreWriteDocument"
+                  },
+                  "parameters": [
+                    "\"Users\"",
+                    "Firebase::GetUserUID()",
+                    "Payload",
+                    "WriteUserState"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Firebase::DatabaseUpdateField"
+                  },
+                  "parameters": [
+                    "\"Users/\"+Firebase::GetUserUID()",
+                    "\"Crops/Carrot\"",
+                    "VariableString(Crops.Carrot)",
+                    "RTDWriteUserStateCarrot"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Firebase::DatabaseUpdateField"
+                  },
+                  "parameters": [
+                    "\"Users/\"+Firebase::GetUserUID()",
+                    "\"Crops/Potato\"",
+                    "VariableString(Crops.Carrot)",
+                    "RTDWriteUserStateCarrot"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "parameters": []
+    }
+  ]
+}
